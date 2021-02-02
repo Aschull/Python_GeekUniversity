@@ -10,6 +10,7 @@ Listas
                        Não possuem tipo fixo de dados, podendo inserir qualquer tipo de dado, int, string, boolean etc.
 
 # Listas em python são representadas por colchetes "[]".
+# Listas são mutáveis, elas podem mudar constantemente.
 
 """
 """type([])
