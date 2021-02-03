@@ -85,5 +85,61 @@ for num in tupla1:
 for indice, valor in enumerate(tupla1):
     print(indice, valor)"""
 
+# Concatenando elementos dentro de uma tupla
+"""tupla = ('a', 'b', 'c', 'd', 'e', 'a', 'b')
+print(tupla.count('a'))"""
 
+# Transforma String em Tupla
+"""escola = tuple('Geek University')
+print(escola)
+print(escola.count('e'))"""
 
+# Dicas na utilização de tuplas
+
+# Devemos utilizar tuplas sempre q não precisarmos modificar os dados contidos em uma coleção
+
+# Exemplos:
+# Meses do ano
+"""meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro',
+         'Novembro', 'Dezembro')
+print(meses)"""
+
+# O acesso a elemetos de uma tupla também é semelahnte a de uma lista
+"""print(meses[5])"""
+
+# Interar com while
+"""i = 0
+while i < len(meses):
+    print(meses[i])
+    i += 1"""
+
+# Verificar em qual indice um elemento se encontra na tupla
+"""print(meses.index('Junho', 3))"""
+
+# Caso o elemento não exista na tupla ir gerar um ERRO
+
+# Slicing
+"""meses = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro',
+         'Novembro', 'Dezembro')
+# tupla[inicio:fim:passo]
+print(meses[5:9:1])"""
+
+"""# Pq utilizar tuplas ??
+# - Tuplas possuem maior performance em comparação a listas
+# - Tuplas deixam seu código mais seguro por conta da imutabilidade.
+"""
+
+"""# Copiando uma tupla para outra
+# Em tuplas não existem Shallow copy
+tupla = (1, 2, 3)
+print(tupla)
+nova = tupla
+
+print(nova)
+print(tupla)
+
+outra = (4, 5, 6)
+nova = nova + outra
+
+print(nova)
+print(tupla)"""
